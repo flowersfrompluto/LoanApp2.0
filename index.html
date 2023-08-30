@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Loan App</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="left">
+            <h1>Welcome to <span style="color: steelblue; font-size: 80px;">GetItQuik<sup
+                        style="font-size: 40px;">&#8482</sup></span> Finance Institute</h1>
+            <h3>Quick and easy way to get a loan to settle your financial challenges...</h3>
+            
+            <p class="info"><span style="color: steelblue; font-size: 25px;">GetItQuik<sup style="font-size: 15px;">&#8482</sup>
+            </span> Finance has been approved by the CBN</p>
+            <p id="date" class="time"></p>
+        </div>
+
+        <div class="right">
+
+            <div class="form">
+                <p class="instruction">Kindly Fill the form with correct information</p>
+                
+                <div class="row1">
+                    <select id="title">
+                        <option value="">Select a Title</option>
+                        <option value="Mr.">Mr</option>
+                        <option value="Mrs.">Mrs</option>
+                        <option value="Prof.">Prof</option>
+                        <option value="Chief">Chief</option>
+                        <option value="Dr.">Dr</option>
+                    </select>
+                    <p id="titleError"></p>
+                </div>
+                
+                <div class="row2">
+                    <div class="names flex">
+                        <div class="first">
+                            <label id="first">First Name</label><br>
+                            <input type="text" id="firstName" placeholder=" First Name"></input>
+                            <p id="firstError"></p><br>
+                        </div>
+
+                        <div class="middle">
+                            <label id="middle">Middle Name</label><br>
+                            <input type="text" id="middleName" placeholder=" Middle Name"></input>
+                            <p id="middleError"></label><br>
+                        </div>
+
+                        <div class="last">
+                            <label id="last">Last Name</label><br>
+                            <input type="text" id="lastName" placeholder=" Last Name"></input>
+                            <p id="lastError"></p><br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row3 flex">
+                    <div class="acct">
+                        <label id="acctBalnc">Current Account Balance</label><br>
+                        <input type="text" id="accountBal" placeholder="Account Balance"></input><br>
+                        <p id="acctError"></p>
+                    </div><br>
+
+                    <div class="loan1">
+                        <label id="loanamnt">Loan Amount</label><br>
+                        <input type="number" id="loan" placeholder="Loan Amount"></input><br>
+                        <p id="loanError"></p>
+                    </div><br>
+
+                </div>
+
+                <div class="row4 flex">
+                    <div class="acctType">
+                        <label id="acctTypeTxt">Account Type</label><br>
+                        <select id="acctType">
+                            <option value="">Select Account Type</option>
+                            <option value="1">Current Account</option>
+                            <option value="2">Savings Account</option>
+                        </select><br>
+                        <p id="accttypeError"></p>
+                    </div><br>
+
+                    <div class="credit">
+                        <label id="creditHistoryTxt">Select Your Credit History</label><br>
+                        <select id="creditHistory">
+                            <option value="">Select a Credit History</option>
+                            <option value="1">Within 6 Month</option>
+                            <option value="2">Above 6 Months</option>
+                        </select><br>
+                        <p id="credithistoryError"></p>
+                    </div><br>
+
+                    <div class="deposit">
+                        <label id="lastDepositTxt">Last deposit date</label><br>
+                        <select id="lastDeposit">
+                            <option value="">Select Last deposit date</option>
+                            <option value="1">Within a Month</option>
+                            <option value="2">Over a Month</option>
+                        </select><br>
+                        <p id="depositError"></p>
+                    </div><br>
+                </div>
+
+                <div class="row5 flex">
+                    <div class="collected">
+                        <label id="lastDate">Last Loan Collection Date</label><br>
+                        <select id="lastLoan">
+                            <option value="">Select Loan Collection Date</option>
+                            <option value="1">Less Than 6 Months</option>
+                            <option value="2">Above 6 Months</option>
+                        </select><br>
+                        <p id="dateError"></p>
+                    </div><br>
+
+                    <div class="collection">
+                        <label id="repaymentTxt">Loan Repayment Period</label><br>
+                        <select id="repayment">
+                            <option value="">Select repayment Period</option>
+                            <option value="1">Within 6 Month</option>
+                            <option value="2">Above 6 Months</option>
+                        </select><br>
+                        <p id="repaymentError"></p>
+                    </div><br>
+                </div>
+                
+
+                <button id="btn" type="submit">Apply</button>
+                <br>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <br>
+                <br>
+                <p id="messageTxt"></p>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
